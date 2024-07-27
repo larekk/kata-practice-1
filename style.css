@@ -38,7 +38,6 @@ body{
 
 .header{
     width: 100%;
-    padding: 0 16px;
     background-color: white;
     margin-bottom: 24px;
 }
@@ -48,6 +47,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 16px;
 }
 
 .header__info{
@@ -313,8 +313,8 @@ body{
 
 @media(768px <= width <1120px){
 
-    .header{
-        padding: 0 24px;
+    .header__menu{
+        margin: 0 24px;
     }
 
     .main__title{
