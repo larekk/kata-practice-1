@@ -35,7 +35,7 @@ body{
     margin-right: 0;
 }
 
-.header{
+.wrapper__header{
     width: 100%;
     background-color: white;
     margin-bottom: 24px;
