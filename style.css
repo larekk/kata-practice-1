@@ -17,7 +17,7 @@ body{
    cursor: pointer;
 }
 
-.button__circle{
+.buttonCircle{
     background: none;
     height: 40px;
     width: 40px;
@@ -25,14 +25,13 @@ body{
     margin-right: 16px;
 }
 
-.button__circle:hover{
-    cursor: pointer;
+.buttonCircle:hover{
     transform: scale(1.1);
     background-color: #41F6D7;
     transition: all .2s;
 }
 
-.button__circle:last-child{
+.buttonCircle:last-child{
     margin-right: 0;
 }
 
@@ -162,7 +161,6 @@ body{
 
 .menu__list{
     padding-left: 0;
-    height: 40px;
     display: flex;
     list-style: none;
     overflow-y: hidden;
@@ -191,14 +189,6 @@ body{
     border-radius: 6px;
     background-color: #fff;
     box-sizing: border-box;
-}
-
-.main__review{
-    background-color: #F8F8F8;
-    font-size: 16px;
-    margin-left:24px;
-    margin-bottom: 16px;
-    color: #7E7E82;
 }
 
 .info__content{
@@ -283,10 +273,6 @@ body{
     }
 
     .main__buttons{
-        display: none;
-    }
-
-    .main__review{
         display: none;
     }
 
@@ -412,6 +398,15 @@ body{
     }
     .menu__list{
         overflow-x: hidden;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+
+    .menu__list .menu__item{
+        white-space: none;
+        overflow-x: hidden;
+        flex-wrap: wrap;
         margin-left: 0;
         margin-bottom: 16px;
     }
