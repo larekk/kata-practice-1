@@ -17,23 +17,27 @@ body{
    cursor: pointer;
 }
 
-.buttonCircle{
+.header button{
+    margin-right: 16px;
+}
+
+.header button:last-child{
+    margin-right:0;
+}
+
+.button--circle{
     background: none;
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin-right: 16px;
 }
 
-.buttonCircle:hover{
+.button--circle:hover{
     transform: scale(1.1);
     background-color: #41F6D7;
     transition: all .2s;
 }
 
-.buttonCircle:last-child{
-    margin-right: 0;
-}
 
 .wrapper__header{
     width: 100%;
@@ -54,11 +58,7 @@ body{
     align-items: center;
 }
 
-.menu__item{
-    background-color: #F8F8F8;
-}
-
-.button__burger{
+.header .button__burger{
     background: url("img/burger__open.svg") no-repeat center center #FF3E79;
     position: relative;
     margin-right: 42px;
@@ -95,7 +95,7 @@ body{
     background: url("img/chat.svg") no-repeat center center #FF3E79;
 }
 
-.button__profile{
+.header .button__profile{
     background: url("img/profile.svg") no-repeat center center #FF3E79;
     margin-right: 42px;
 }
@@ -175,6 +175,7 @@ body{
     color:#7E7E82;
     font-size: 16px;
     box-sizing: border-box;
+    background-color: #F3F3F3;
 }
 
 .menu__item:hover{
@@ -319,10 +320,6 @@ body{
         display: none;
     }
 
-    .main__review{
-        display: none;
-    }
-
     .info__content{
         margin: 0 auto;
         display: flex;
@@ -396,6 +393,7 @@ body{
         width: 1070px;
         margin: 0 auto;
     }
+
     .menu__list{
         overflow-x: hidden;
         flex-wrap: wrap;
@@ -406,7 +404,6 @@ body{
     .menu__list .menu__item{
         white-space: none;
         overflow-x: hidden;
-        flex-wrap: wrap;
         margin-left: 0;
         margin-bottom: 16px;
     }
